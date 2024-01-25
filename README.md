@@ -57,4 +57,4 @@ cout<< res-sum; // gives missing number
 int arr = 
 ```
 
-![[Pasted image 20240124184332.png]]
+![[image]](Pasted image 20240124184332.png)
