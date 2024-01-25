@@ -70,6 +70,7 @@ arr = [4,6,3,2,1,1]
 n = 6
 
 ## Approach 1 : Hashing
+
 Explanation -
 if count > 2 => repeating num
 if count == 0 => missing num
@@ -77,6 +78,7 @@ if count == 0 => missing num
 **TC : O(2n), SC : O(n)**
 
 ## Approach 2 : mathematical
+
 Explanation -
 s = sum of elements
 sn = sum of n num
@@ -85,12 +87,12 @@ s2n = sum of square of n num
 x = repeating num
 y = missing num
 
-(4+6+3+2+1+1)-(1+2+3+4+5+6) = -4
+(4+6+3+2+1+1) - (1+2+3+4+5+6) = -4
 s-sn =-4
 sn = (n(n+1))/2
 x-y = -4 -> (1) // val1
 
-(4^2+6^2+3^2+2^2+1^2+1^2)-(1^2+2^2+3^2+4^2+5^2+6^2) = -24
+(4^2+6^2+3^2+2^2+1^2+1^2) - (1^2+2^2+3^2+4^2+5^2+6^2) = -24
 s2-s2n = -24
 s2n = (n(n+1)(2n+1))/6
 x^2-y^2 = -24 => (x+y)(x-y) = -24 => x+y = -24/(x-y) => x+y = -24/-4 = 6 // val2
