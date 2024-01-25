@@ -57,4 +57,7 @@ cout<< res-sum; // gives missing number
 int arr = 
 ```
 
+![image](https://github.com/Sujithamathvini/DSA/assets/70484186/fb64e5db-ee4f-4a4b-9446-c32693304add)
+
+
 ![[image]](Pasted image 20240124184332.png)
