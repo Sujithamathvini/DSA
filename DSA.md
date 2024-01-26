@@ -169,6 +169,7 @@ for(int i=n-2;i>=0;i--){
                     swapped = 1;
                 }
             }
-            if(swapped==0) break;
+            if(swapped==0) break; // if not swapped then array is sorted and break loop
         }
 ```
+
