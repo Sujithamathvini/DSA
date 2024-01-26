@@ -157,3 +157,18 @@ for(int i=n-1;i>0;i--){
  ### Explanation -
  - "swapping adjacent elements" if a[i]>a[i+1]
  - until "largest goes to an end" of array which becomes sorted
+ - "best case :" checking if no swapping is done then array is sorted
+	 - int swapped = 0
+
+```cpp
+for(int i=n-2;i>=0;i--){
+            int swapped = 0;
+            for(int j=0;j<=i;j++){
+                if(arr[j]>arr[j+1]){
+                    swap(arr[j],arr[j+1]);
+                    swapped = 1;
+                }
+            }
+            if(swapped==0) break;
+        }
+```
