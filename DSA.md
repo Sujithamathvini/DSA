@@ -130,6 +130,4 @@ Explanation -
 - "swap" 1st unsorted element and smallest
 - now, an element is sorted
 
-```cpp
-
-```
+ - 
