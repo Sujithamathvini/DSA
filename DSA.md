@@ -153,7 +153,8 @@ for(int i=n-1;i>0;i--){
 ```
 
  
-> [!NOTE] Title
+> [!NOTE] Code
+> ```cpp
 > // forward direction
 for(int i=0;i<n;i++){
 	int index = i;
@@ -163,7 +164,6 @@ for(int i=0;i<n;i++){
 	}
 	swap(a[i],a[index]);
 }
-
 // backward direction
 for(int i=n-1;i>0;i--){
 	int index = i;
@@ -173,3 +173,4 @@ for(int i=n-1;i>0;i--){
 	}
 	swap(a[i],a[index]);
 }
+```
