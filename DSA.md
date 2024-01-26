@@ -133,7 +133,10 @@ return make_pair(x,y);
 ```cpp
 for(int i=0;i<n;i++){
 	int index = i;
-	
+	for(int j=i+1;j<n;i++){
+		if(a[j]<a[index]) index = j;
+	}
+	swap(arr[i],)
 }
 ```
 
