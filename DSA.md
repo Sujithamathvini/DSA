@@ -130,7 +130,11 @@ return make_pair(x,y);
 - find the "smallest in unsorted arr"
 - "swap" 1st unsorted element and smallest
 - now, an element is sorted
-
-##
+```cpp
+for(int i=0;i<n;i++){
+	int index = i;
+	
+}
+```
 
  
