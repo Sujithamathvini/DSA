@@ -153,23 +153,3 @@ for(int i=n-1;i>0;i--){
 ```
 
  
-> [!NOTE] Code
-> ```cpp// forward direction
-for(int i=0;i<n;i++){
-	int index = i;
-	for(int j=i+1;j<n;i++){
-		if(a[j]<a[index])
-		index = j; // smallest element's index
-	}
-	swap(a[i],a[index]);
-}
-// backward direction
-for(int i=n-1;i>0;i--){
-	int index = i;
-	for(int j=i-1;j>0;j--){
-		if(a[j]>a[index])
-		index = j;
-	}
-	swap(a[i],a[index]);
-}
-```
