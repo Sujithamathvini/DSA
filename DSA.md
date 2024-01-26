@@ -155,4 +155,5 @@ for(int i=n-1;i>0;i--){
  ## Bubble Sort
  
  ### Explanation -
- - swap
+ - "swapping adjacent elements" if a[i]>a[i+1]
+ - until "largest goes to an end" of array which becomes sorted
