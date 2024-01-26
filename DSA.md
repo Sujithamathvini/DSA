@@ -125,9 +125,9 @@ return make_pair(x,y);
 # Sorting array
 ## Selection Sort
 
-Explanation -
+### Explanation -
 - find the "smallest in unsorted arr"
 - "swap" 1st unsorted element and smallest
 - now, an element is sorted
 
- - 
+ 
