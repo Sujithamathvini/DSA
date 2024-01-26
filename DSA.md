@@ -144,7 +144,11 @@ for(int i=0;i<n;i++){
 // backward direction
 for(int i=n-1;i>0;i--){
 	int index = i;
-	f 
+	for(int j=i-1;j>0;j--){
+		if(a[j]>a[index])
+		index = j;
+	}
+	swap
 }
 ```
 
