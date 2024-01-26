@@ -120,6 +120,7 @@ int y = x - val1; // missing num
 
 return make_pair(x,y);
 ```
+
 **TC : O(n)**
 
 # Sorting array
