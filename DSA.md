@@ -27,10 +27,10 @@ while(s<e){
 ```
 
 # missing number
-<p>**Input:**
+**Input:**
 	N = 5
 	A[] = {1,2,3,5}
-**Output:** 4</p>
+**Output:** 4
 
 TC - O(n)
 ```cpp
@@ -65,7 +65,7 @@ arr[0]=temp; // the last element (temp) is placed in front of array
 
 # missing and repeating number
 
-<p>Input -
+Input -
 arr = [4,6,3,2,1,1]
 n = 6
 
@@ -100,7 +100,7 @@ x+y = 6 -> (2)
 
 (1)+(2) => x+y+x-y = -4+6 => 2x = 2 => x = 1 // repeating num
 put x = 1 in (2) => x-y = val1 => -y = val1 -x => y = x-val1
-=> 1-y = -4 => -y = -4-1 => y = 4+1 => y = 5 // missing num</p>
+=> 1-y = -4 => -y = -4-1 => y = 4+1 => y = 5 // missing num
 
 ```cpp
 int sn = (n(n+1))/2;
@@ -122,3 +122,14 @@ return make_pair(x,y);
 ```
 **TC : O(n)**
 
+# Sorting array
+## Selection Sort
+
+Explanation -
+- find the "smallest in unsorted arr"
+- "swap" 1st unsorted element and smallest
+- now, an element is sorted
+
+```cpp
+
+```
