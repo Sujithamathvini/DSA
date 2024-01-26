@@ -153,9 +153,8 @@ for(int i=n-1;i>0;i--){
 ```
 
  
-> [!tip] Code
-> ```cpp
-> // forward direction
+> [!NOTE] Code
+> ```cpp// forward direction
 for(int i=0;i<n;i++){
 	int index = i;
 	for(int j=i+1;j<n;i++){
