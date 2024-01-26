@@ -153,7 +153,7 @@ for(int i=n-1;i>0;i--){
 ```
 
  
-> [!NOTE] Code
+> [!tip] Code
 > ```cpp
 > // forward direction
 for(int i=0;i<n;i++){
