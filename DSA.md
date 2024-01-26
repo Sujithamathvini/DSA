@@ -134,9 +134,10 @@ return make_pair(x,y);
 for(int i=0;i<n;i++){
 	int index = i;
 	for(int j=i+1;j<n;i++){
-		if(a[j]<a[index]) index = j;
+		if(a[j]<a[index])
+		index = j; // smallest element's index
 	}
-	swap(arr[i],)
+	swap(a[i],a[index]);
 }
 ```
 
