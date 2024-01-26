@@ -148,7 +148,7 @@ for(int i=n-1;i>0;i--){
 		if(a[j]>a[index])
 		index = j;
 	}
-	swap
+	swap(a[i],a[index]);
 }
 ```
 
