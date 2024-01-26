@@ -27,10 +27,10 @@ while(s<e){
 ```
 
 # missing number
-**Input:**
+<p>**Input:**
 	N = 5
 	A[] = {1,2,3,5}
-**Output:** 4
+**Output:** 4</p>
 
 TC - O(n)
 ```cpp
@@ -65,7 +65,7 @@ arr[0]=temp; // the last element (temp) is placed in front of array
 
 # missing and repeating number
 
-Input -
+<p>Input -
 arr = [4,6,3,2,1,1]
 n = 6
 
@@ -100,7 +100,7 @@ x+y = 6 -> (2)
 
 (1)+(2) => x+y+x-y = -4+6 => 2x = 2 => x = 1 // repeating num
 put x = 1 in (2) => x-y = val1 => -y = val1 -x => y = x-val1
-=> 1-y = -4 => -y = -4-1 => y = 4+1 => y = 5 // missing num
+=> 1-y = -4 => -y = -4-1 => y = 4+1 => y = 5 // missing num</p>
 
 ```cpp
 int sn = (n(n+1))/2;
