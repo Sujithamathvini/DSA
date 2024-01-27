@@ -192,4 +192,6 @@ for(int i=1;i<n;i++){
 - **TC : worst & avg - O(n^2)**, **best - O(n)**
 
 # Binary Search
-- 
+
+> [!important] Requirment
+> Array should be sorted - increasing/decreasing
