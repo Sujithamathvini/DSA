@@ -170,7 +170,7 @@ for(int i=n-2;i>=0;i--){
 
 - find the largest num by comparing and swapping
 - moving largest to end
-- **TC : worst & avg - O(n^2), **best - O(n)** // only by checking swapped
+- **TC : worst & avg - O(n^2), best - O(n)** // only by checking swapped
 
 ## Insertion sort
 ### Explanation -
@@ -189,7 +189,7 @@ for(int i=1;i<n;i++){
 }
 ```
 
-- **TC : worst & avg - O(n^2)**, **best - O(n)**
+- **TC : worst & avg - O(n^2), best - O(n)**
 
 # Binary Search
 
@@ -207,16 +207,25 @@ for(int i=1;i<n;i++){
 ```cpp
 int s = 0, e = n-1;
 while(s<=e){
+	// finds the middle element of array
 	int mid = (s+e)/2;
+
+	// key found
 	if(a[mid]==key){
 		cout<<mid+1;
 		break;
 	}
+
+	// if key>mid ele
 	else if(key>a[mid]){
 		s=mid+1;
 	}
+
+	// if key<mid ele
 	else{
 		e=mid-1;
 	}
 }
 ```
+
+- **TC : worst & avg - O(log n), best - O(1)**
