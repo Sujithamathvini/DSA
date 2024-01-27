@@ -152,9 +152,9 @@ for(int i=n-1;i>0;i--){
 }
 ```
 
- ## Bubble Sort
+## Bubble Sort
  
- ### Explanation -
+### Explanation -
  - "swapping adjacent elements" if a[i]>a[i+1]
  - until "largest goes to an end" of array which becomes sorted
  - "best case :" checking if no swapping is done then array is sorted
@@ -173,3 +173,9 @@ for(int i=n-2;i>=0;i--){
         }
 ```
 
+- find the largest num by comparing and swapping
+- moving largest to end
+
+## Insertion sort
+
+### Explanation -
