@@ -203,3 +203,20 @@ for(int i=1;i<n;i++){
 	- if search element < mid element, then end = mid-1
 	- if search element > mid element, then start = mid+1
 4. until ==strat<=end==, repeat from step 2 until you find the element in array
+
+```cpp
+int s = 0, e = n-1;
+while(s<=e){
+	int mid = (s+e)/2;
+	if(a[mid]==key){
+		cout<<mid+1;
+		break;
+	}
+	else if(key>a[mid]){
+		s=mid+1;
+	}
+	else{
+		e=mid-1;
+	}
+}
+```
