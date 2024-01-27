@@ -15,7 +15,6 @@ pair<long long, long long> getMinMax(long long a[], int n) {
 ```
 # reverse an array 
 
-TC - O(n)
 ```cpp
 int arr = {1,2,3,4,5};
 int s=0, e=4;
@@ -32,7 +31,6 @@ while(s<e){
 	A[] = {1,2,3,5}
 **Output:** 4
 
-TC - O(n)
 ```cpp
 int a[4]={1,2,3,5};
 int n=5;
@@ -48,6 +46,7 @@ int res = n*(n+1)/2;
 cout<< res-sum; // gives missing number
 ```
 
+- **TC : O(n)**
 # rotate array by 1
 
 ```cpp
@@ -68,14 +67,13 @@ arr[0]=temp; // the last element (temp) is placed in front of array
 Input -
 arr = [4,6,3,2,1,1]
 n = 6
-
 ## Approach 1 : Hashing
 
 Explanation -
 if count > 2 => repeating num
 if count == 0 => missing num
 
-**TC : O(2n), SC : O(n)**
+- **TC : O(2n), SC : O(n)**
 
 ## Approach 2 : mathematical
 ### Explanation -
@@ -120,7 +118,7 @@ int y = x - val1; // missing num
 return make_pair(x,y);
 ```
 
-**TC : O(n)**
+- **TC : O(n)**
 
 # Sorting array
 ## Selection Sort
@@ -172,19 +170,26 @@ for(int i=n-2;i>=0;i--){
 
 - find the largest num by comparing and swapping
 - moving largest to end
-- **TC : worst & avg - O(n^2)
-- **best - O(n)** // only by checking swapped
+- **TC : worst & avg - O(n^2), **best - O(n)** // only by checking swapped
 
 ## Insertion sort
 ### Explanation -
  - Its similar like the way you ==sort playing cards==.
- - ==taking one element from unsorted part and comparing with the elements in sorted part==
+ - splitting into two parts - sorted and unsorted part.
+ - ==taking one element from unsorted part and comparing with the elements in sorted part==.
 
 ```cpp
 for(int i=1;i<n;i++){
 	for(int j=i;j>0;j--){
 		if(a[j]<a[j-1])
 			swap(a[j],a[j-1]);
+		else
+			break; // this is cuz of best case O(n)
 	}
 }
 ```
+
+- **TC : worst & avg - O(n^2)**, **best - O(n)**
+
+# Binary Search
+- 
