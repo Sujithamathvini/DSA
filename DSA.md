@@ -195,3 +195,11 @@ for(int i=1;i<n;i++){
 
 > [!important] Requirment
 > Array should be sorted - increasing/decreasing
+
+## Explanation -
+1. find ==mid== of the array
+2. if search element == mid element, then found
+3. if not
+	- if search element < mid element, then end = mid-1
+	- if search element > mid element, then start = mid+1
+4. until ==strat<=end==, repeat from step 2 until you find the element in array
