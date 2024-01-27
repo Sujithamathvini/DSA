@@ -78,8 +78,7 @@ if count == 0 => missing num
 **TC : O(2n), SC : O(n)**
 
 ## Approach 2 : mathematical
-
-Explanation -
+### Explanation -
 s = sum of elements
 sn = sum of n num
 s2 = sum of square of elements
@@ -125,10 +124,9 @@ return make_pair(x,y);
 
 # Sorting array
 ## Selection Sort
-
 ### Explanation -
-- find the "smallest in unsorted arr"
-- "swap" 1st unsorted element and smallest
+- find the ==smallest in unsorted arr==
+- ==swap== 1st unsorted element and smallest
 - now, an element is sorted
 ```cpp
 // forward direction
@@ -151,13 +149,12 @@ for(int i=n-1;i>0;i--){
 	swap(a[i],a[index]);
 }
 ```
-
+- **TC : O(n^2)**
 ## Bubble Sort
- 
 ### Explanation -
- - "swapping adjacent elements" if a[i]>a[i+1]
- - until "largest goes to an end" of array which becomes sorted
- - "best case :" checking if no swapping is done then array is sorted
+ - ==swapping adjacent elements== if a[i]>a[i+1]
+ - until== largest goes to an end== of array which becomes sorted
+ - ==best case :== checking if no swapping is done then array is sorted
 	 - int swapped = 0
 
 ```cpp
@@ -175,7 +172,19 @@ for(int i=n-2;i>=0;i--){
 
 - find the largest num by comparing and swapping
 - moving largest to end
+- **TC : worst & avg - O(n^2)
+- **best - O(n)** // only by checking swapped
 
 ## Insertion sort
-
 ### Explanation -
+ - Its similar like the way you ==sort playing cards==.
+ - ==taking one element from unsorted part and comparing with the elements in sorted part==
+
+```cpp
+for(int i=1;i<n;i++){
+	for(int j=i;j>0;j--){
+		if(a[j]<a[j-1])
+			swap(a[j],a[j-1]);
+	}
+}
+```
