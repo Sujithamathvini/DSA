@@ -238,7 +238,6 @@ while(s<=e){
 - to find ==last position== move int right direct ==( s=mid+1 )==
 
 ```cpp
-```cpp
 vector<int> searchRange(vector<int>& a, int t) {
 	int s = 0, e = a.size()-1, mid, first = -1, last = -1;
 	
@@ -270,6 +269,7 @@ vector<int> searchRange(vector<int>& a, int t) {
 	ans.push_back(last);
 	return ans;
 }
+
 /* vector<int> ans(2);
 ans.push_back(first);
 ans.push_back(last);
@@ -285,4 +285,37 @@ ans[1]=last;
 
 Result will be like this [first,last] */
 ```
+
+**TC : O(log n)**
+## 2. Search insert position
+### Explanation -
+- use binary search to find insert position
+- whenever target < a[mid] store, ==ans = mid==
+- remeber, intialize ==index = n==, bcz if the target doesn't have the posibility to insert target in the array it'll go to the last position
+
+```cpp
+int searchInsert(vector<int>& a, int t) {
+	int s = 0, e = a.size()-1, ans = a.size(), mid;
+	while(s<=e){
+		mid = s+(e-s)/2;
+		if(a[mid] == t){
+			ans = mid;
+			break;
+		}
+		else if(t < a[mid]){
+			ans = mid;
+			e = mid-1;
+		}
+		else{
+			s = mid+1;
+		}
+	}
+	return ans;
+}
 ```
+
+**TC : O(log n)**
+
+### Optimization
+- just using the normal binary search
+- and even if the
