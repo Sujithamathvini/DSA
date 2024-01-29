@@ -238,5 +238,37 @@ while(s<=e){
 - to find ==last position== move int right direct ==( s=mid+1 )==
 
 ```cpp
+```cpp
+vector<int> searchRange(vector<int>& a, int t) {
+	int s = 0, e = a.size()-1, mid, first = -1, last = -1;
+	
+	// finding first position
+	while(s<=e){
+		mid = s+(e-s)/2;
+		if(a[mid] == t){
+			first = mid;
+			e = mid-1;
+		}
+		else if(t>a[mid])   s = mid+1;
+		else    e = mid-1;
+	}
 
+	// finding last position
+	s = 0, e = a.size()-1;
+	while(s<=e){
+		mid = s+(e-s)/2;
+		if(a[mid] == t){
+			last = mid;
+			s = mid+1;
+		}
+		else if(t>a[mid])   s = mid+1;
+		else    e = mid-1;
+	}
+	
+	vector<int> ans;
+	ans.push_back(first);
+	ans.push_back(last);
+	return ans;
+}
+```
 ```
