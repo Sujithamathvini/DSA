@@ -270,5 +270,19 @@ vector<int> searchRange(vector<int>& a, int t) {
 	ans.push_back(last);
 	return ans;
 }
+/* vector<int> ans(2);
+ans.push_back(first);
+ans.push_back(last);
+return ans;
+ 
+its because ans(2), it automatically has value 0 and when we push_back(first,last) =>
+Result will be like [0,0,first,last]
+
+if you use
+vector<int>and(2);
+ans[0]=first;
+ans[1]=last;
+
+Result will be like this [first,last] */
 ```
 ```
