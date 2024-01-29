@@ -318,4 +318,31 @@ int searchInsert(vector<int>& a, int t) {
 
 ### Optimization
 - just using the normal binary search
-- and even if the
+- and even if the target can't be inserted atlast the start wille ==star = mid+1 => start == n== 
+
+```cpp
+int s = 0, e = n-1, mid;
+while(s<=e){
+	// finds the middle element of array
+	mid = s+ (e-s)/2;
+
+	// key found
+	if(a[mid]==target){
+		return mid;
+	}
+
+	// if key>mid ele
+	else if(target>a[mid]){
+		s=mid+1;
+	}
+
+	// if key<mid ele
+	else{
+		e=mid-1;
+	}
+}
+retrun s;
+```
+
+**TC : O(log n)**
+
