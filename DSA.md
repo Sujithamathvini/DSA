@@ -229,3 +229,14 @@ while(s<=e){
 ```
 
 - **TC : worst & avg - O(log n), best - O(1)**
+
+# Binary Search - Problems
+## 1. [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+### Explanation -
+- Use ==binary search== - 2 times
+- to find ==first position== move in left direction ==( e=mid-1 )==
+- to find ==last position== move int right direct ==( s=mid+1 )==
+
+```cpp
+
+```
