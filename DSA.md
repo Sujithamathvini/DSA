@@ -287,7 +287,7 @@ Result will be like this [first,last] */
 ```
 
 **TC : O(log n)**
-## 2. Search insert position
+## 2. [Search insert position](https://leetcode.com/problems/search-insert-position/description/)
 ### Explanation -
 - use binary search to find insert position
 - whenever target < a[mid] store, ==ans = mid==
@@ -346,7 +346,7 @@ retrun s;
 
 **TC : O(log n)**
 
-## 3. Sqrt(x)
+## 3. [Sqrt(x)](https://leetcode.com/problems/sqrtx/submissions/1160182555/)
 ### Explanation-
 
 ```cpp
